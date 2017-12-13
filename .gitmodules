@@ -1,0 +1,9 @@
+[submodule "art"]
+	path = art
+	url = https://github.com/theGreatWhiteShark/thegreatwhiteshark.art.io
+[submodule "coding"]
+	path = coding
+	url = https://github.com/theGreatWhiteShark/thegreatwhiteshark.coding.io
+[submodule "music"]
+	path = music
+	url = https://github.com/theGreatWhiteShark/thegreatwhiteshark.music.io
