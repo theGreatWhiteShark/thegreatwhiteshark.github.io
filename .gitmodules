@@ -7,3 +7,6 @@
 [submodule "music"]
 	path = music
 	url = https://github.com/theGreatWhiteShark/thegreatwhiteshark.music.io
+[submodule "themes/osprey"]
+	path = themes/osprey
+	url = git@github.com:theGreatWhiteShark/osprey.git

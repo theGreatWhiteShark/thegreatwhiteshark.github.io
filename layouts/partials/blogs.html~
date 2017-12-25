@@ -1,0 +1,24 @@
+<section class="blogs" id="blogs">
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12"><h1>Some of my latest projects</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 posts-list">
+                {{ range first 6 (where .Data.Pages "Section" "blogs") }}
+                    <article>
+                        <h2><a href="{{ .Description }}">{{ .Title }}</a></h2>
+                        <div class=sub-header>
+                          {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
+                        </div>
+			<p>{{ .Summary }}</p>
+
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs-12"><h3><a href="{{ .Site.BaseURL }}/talks/">View All</a></h3></div>
+        </div>
+    </div>
+</section>

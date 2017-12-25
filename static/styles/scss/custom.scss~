@@ -1,0 +1,14 @@
+.projects {
+  min-height: 100vh;
+  h3 {
+    margin: 0 0 $vertical-rhythm;
+    font-family: $font-body;
+  }
+}
+.blogs {
+  min-height: 100vh;
+  h3 {
+    margin: 0 0 $vertical-rhythm;
+    font-family: $font-body;
+  }
+}
