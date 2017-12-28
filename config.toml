@@ -1,5 +1,5 @@
-# baseURL = "https://thegreatwhiteshark.github.io/"
-baseURL = "/home/phil/git/thegreatwhiteshark.github.io/public"
+baseURL = "https://thegreatwhiteshark.github.io/"
+# baseURL = "/home/phil/git/thegreatwhiteshark.github.io/public"
 languageCode = "en-us"
 title = "theGreatWhiteShark blog"
 theme = "osprey"
@@ -9,6 +9,8 @@ theme = "osprey"
 	author = "Philipp Müller"
 	description = "A collection of all the my interests"
 	github = "theGreatWhiteShark"
+	logoBig = "/images/logo-big.jpg"
+	logoSmall = "/images/logo-small.jpg" 
 	email = "thetruephil@googlemail.com"
 	hightlightJs = true
 	credit = true

@@ -13,6 +13,16 @@ gulp.task( "scss", function() {
       .pipe( concatCSS( "custom.css" ) )
       .pipe( gulp.dest( "static/styles" ) ) } );
 
+// Compile the changes that occure in the scss folder of the theme and
+// insert them in the static/styles folder of this repository
+gulp.task( "scss-theme", function() {
+  gulp.src( "themes/osprey/static/styles/scss/*.scss" )
+      .pipe( sass( { outputStyle: "compressed" } ) )
+      .pipe( cleanCSS() )
+      .pipe( autoprefixer( "last 10 versions" ) )
+      .pipe( concatCSS( "main.css" ) )
+      .pipe( gulp.dest( "static/styles" ) ) } );
+
 // Watch for changes of the scss files
 gulp.task( "watch", [ "scss" ], function() {
   gulp.watch( "static/styles/scss/*", [ "scss" ] ) } );
