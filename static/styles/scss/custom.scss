@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik|Bitter");
-// Colors
-// https://coolors.co/1e1e1e-4e6b6c-f7f7f7-ffffff-da784d
-$black: #212121;
-$storm: #4E6B6C;
-$smoke: #F7F7F7;
-$accent: #DA784D;
-$linkColor: #e9ae95;
 
 // Custom colors
-$background-dark: #fff;
-$font-dark: #000;
+$background-dark: #003568;
+$heading-dark: #ddcc88;
+$text-dark: #f2f2f2;
+$link-dark: #f7f7f7;
+$link-dark-hover: #ddcc88;
+$subheading-dark: #b9b9b9;
 
-$background-bright: #000;
-$font-bright: #fff;
+$background-bright: #ececec;
+$heading-bright: #121212;
+$text-bright: #262626;
+$link-bright: #003568;
+$link-bright-hover: #dda289;
+$subheading-bright: #555555;
 
 // Fonts
 $font-header: "Bitter", "Roboto Slab", "Cambria", Georgia, serif;
@@ -51,17 +52,143 @@ $breakpoint-medium: 48em; // 768px
 $breakpoint-small: 25em; // 400px
 
 
+// The start page
 .projects {
+  color: $heading-dark; // this part is omitted ... ?
+}
+header {
+  background-color: $background-dark;
+  h1 {
+    color: $heading-dark;
+  }
+  a:hover {
+    color: $link-dark-hover;
+  }
+}
+nav {
+  background-color: $background-dark;
+  a {
+    color: $heading-dark;
+  }
+  h3 {
+    text-transform: unset;
+  }
+  box-shadow: 0 2px 2px $background-bright;
+  a:hover {
+    color: $link-dark-hover;
+  }
+}
+.about {
+  background-color: $background-bright;
+  h1, p {
+    color: $heading-bright;
+    a {
+      text-shadow: unset;
+      background-color: $background-bright;
+      color: $link-bright;
+      background-image: unset;
+    }
+  }
+  a:hover {
+    color: $link-bright-hover;
+  }
+}
+
+.blogs {
+  background-color: $background-bright;
+  h1 {
+    color: $heading-bright;
+  }
+  h2, a {
+    color: $link-bright;
+    font-weight: bold;
+    margin-left: 1%;
+  }
+  .sub-header {
+    color: $subheading-bright;
+  }
+  p {
+    color: $text-bright;
+  }
   min-height: 100vh;
   h3 {
     margin: 0 0 $vertical-rhythm;
     font-family: $font-body;
   }
+  a:hover {
+    color: $link-bright-hover;
+  }
 }
-.blogs {
+
+.projects {
+  background-color: $background-dark;
+  h1 {
+    color: $heading-dark;
+  }
+  h2, a {
+    color: $link-dark;
+  }
+  .sub-header {
+    color: $subheading-dark;
+  }
+  p {
+    color: $text-dark;
+  }
   min-height: 100vh;
   h3 {
     margin: 0 0 $vertical-rhythm;
     font-family: $font-body;
+  }
+  a:hover {
+    color: $link-dark-hover;
+  }
+  min-height: 100vh;
+}
+
+footer {
+  background-color: $background-dark;
+  color: $text-dark;
+  a {
+    color: $link-dark;
+    figcaption {
+      color: $text-dark;
+    }
+    svg {
+      fill: $text-dark;
+    }
+  }
+  a:hover {
+    color: $link-dark-hover;
+    figcaption {
+      color: $link-dark-hover;
+    }
+    svg {
+      fill: $link-dark-hover;
+    }
+  }
+}
+
+/* E.g. on the individual /projects/ page */
+.blog {
+  background-color: $background-bright;
+  h1 {
+    color: $heading-bright;
+  }
+  h2, a {
+    color: $link-bright;
+  }
+  .sub-header {
+    color: $subheading-bright;
+  }
+  p {
+    color: $text-bright;
+  }
+  min-height: 100vh;
+  h3 {
+    margin: 0 0 $vertical-rhythm;
+    font-family: $font-body;
+  }
+  a:hover {
+    color: $link-bright-hover;
   }
 }

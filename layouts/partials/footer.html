@@ -1,0 +1,90 @@
+</main>
+<footer class="row middle-xs center-xs">
+  {{ if .Site.Params.github }}
+  <div class="col-xs-3 col-md-2">
+    <a href="https://github.com/{{ .Site.Params.github }}">
+      <svg aria-hidden="true" height="48" version="1.1"
+	   viewBox="0 0 16 16" width="48">
+	<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      <figcaption>Github repository</figcaption>
+    </a>
+  </div>
+  {{ end }}
+  <div class="col-xs-3 col-md-2">
+    <a href="https://www.thegreatwhiteshark.tech.blog">
+      <svg aria-hidden="true" height="48" version="1.1"
+	   viewBox="0 0 22 22" width="48">
+	<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM3.5 12c0-1.232.264-2.402.736-3.46L8.29 19.65C5.456 18.272 3.5 15.365 3.5 12zm8.5 8.5c-.834 0-1.64-.12-2.4-.345l2.55-7.41 2.613 7.157c.017.042.038.08.06.117-.884.31-1.833.48-2.823.48zm1.172-12.485c.512-.027.973-.08.973-.08.458-.055.404-.728-.054-.702 0 0-1.376.108-2.265.108-.835 0-2.24-.107-2.24-.107-.458-.026-.51.674-.053.7 0 0 .434.055.892.082l1.324 3.63-1.86 5.578-3.096-9.208c.512-.027.973-.08.973-.08.458-.055.403-.728-.055-.702 0 0-1.376.108-2.265.108-.16 0-.347-.003-.547-.01C6.418 5.025 9.03 3.5 12 3.5c2.213 0 4.228.846 5.74 2.232-.037-.002-.072-.007-.11-.007-.835 0-1.427.727-1.427 1.51 0 .7.404 1.292.835 1.993.323.566.7 1.293.7 2.344 0 .727-.28 1.572-.646 2.748l-.848 2.833-3.072-9.138zm3.1 11.332l2.597-7.506c.484-1.212.645-2.18.645-3.044 0-.313-.02-.603-.057-.874.664 1.21 1.042 2.6 1.042 4.078 0 3.136-1.7 5.874-4.227 7.347z"></path>
+      </svg>
+      <figcaption>Old blog</figcaption>
+    </a>
+  </div>
+  {{ if .Site.Params.linkedin }}
+  <div class="col-xs-3 col-md-2"><a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}">LinkedIn</a></div>
+  {{ end }}
+  {{ if .Site.Params.twitter }}
+  <div class="col-xs-3 col-md-2"><a href="https://twitter.com/{{ .Site.Params.twitter }}">Twitter</a></div>
+  {{ end }}
+  {{ if or (.Site.Params.copyright) (.Site.Params.credit) }}
+  <div class="col-xs-12">
+    {{ if .Site.Params.copyright }}
+    Copyright &copy; {{ now.Format "2006" }} {{ .Site.Title }}.
+    {{ end }}
+    {{ if .Site.Params.credit }}
+    Theme based on <a href="https://github.com/tomanistor/osprey">osprey</a> developed by <a href="https://tomanistor.com">Toma Nistor</a>.
+    {{ end }}
+  </div>
+  {{ end }}
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  {{ if .IsHome }}
+  <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "index.js" }}{{ else }}index.js{{ end }}" type="text/javascript"></script>
+  {{ if .Site.Params.ajaxFormspree }}
+  <!-- Formspree AJAX -->
+  <script>
+   $("#form-contact").on("submit", function(e) {
+     e.preventDefault();
+
+     // Store form field values
+     var name = $("input[name=name]").val();
+     var email = $("input[name=email").val();
+     var subject = $("input[name=_subject").val();
+     var message = $("textarea[name=message]").val();
+
+     // Send to Formspree
+     $.ajax({
+       url:"https://formspree.io/{{ .Site.Params.email }}",
+       method:"POST",
+       data:{
+         name:name,
+         _replyto:email,
+         email:email,
+         _subject:subject,
+         message:message,
+       },
+       dataType:"json",
+       success:function() {
+         console.log("Form successfully sent");
+         // Reset form
+         $("#form-contact").get(0).reset();
+         // Fade out submit button, fade in thank you message, then fade out message and fade in submit button
+         $("#form-submit").fadeOut(function(){
+           $("#form-thankyou").fadeIn(function(){
+             $("#form-thankyou").delay(4000).fadeOut(function(){
+               $("#form-submit").fadeIn();
+             });
+           });
+         });
+       }
+     });
+
+   });
+  </script>
+  {{ end }}
+  {{ else }}
+  <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "main.js" }}{{ else }}main.js{{ end }}" type="text/javascript"></script>
+  {{ end }}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+</footer>
+    </body>
+</html>

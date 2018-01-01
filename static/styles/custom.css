@@ -1,13 +1,175 @@
-.projects h3 {
-  margin: 0 0 2rem;
-  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+header {
+  background-color: #003568;
+}
+
+header h1 {
+  color: #dc8;
+}
+
+header a:hover {
+  color: #dc8;
+}
+
+nav {
+  background-color: #003568;
+  -webkit-box-shadow: 0 2px 2px #ececec;
+  box-shadow: 0 2px 2px #ececec;
+}
+
+nav a {
+  color: #dc8;
+}
+
+nav h3 {
+  text-transform: unset;
+}
+
+nav a:hover {
+  color: #dc8;
+}
+
+.about {
+  background-color: #ececec;
+}
+
+.about h1,
+.about p {
+  color: #121212;
+}
+
+.about h1 a,
+.about p a {
+  text-shadow: unset;
+  background-color: #ececec;
+  color: #003568;
+  background-image: unset;
+}
+
+.about a:hover {
+  color: #dda289;
 }
 
 .blogs {
+  background-color: #ececec;
   min-height: 100vh;
+}
+
+.blogs h1 {
+  color: #121212;
+}
+
+.blogs a,
+.blogs h2 {
+  color: #003568;
+  font-weight: 700;
+  margin-left: 1%;
+}
+
+.blogs .sub-header {
+  color: #555;
+}
+
+.blogs p {
+  color: #262626;
 }
 
 .blogs h3 {
   margin: 0 0 2rem;
   font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+}
+
+.blogs a:hover {
+  color: #dda289;
+}
+
+.projects {
+  background-color: #003568;
+  min-height: 100vh;
+  min-height: 100vh;
+}
+
+.projects h1 {
+  color: #dc8;
+}
+
+.projects a,
+.projects h2 {
+  color: #f7f7f7;
+}
+
+.projects .sub-header {
+  color: #b9b9b9;
+}
+
+.projects p {
+  color: #f2f2f2;
+}
+
+.projects h3 {
+  margin: 0 0 2rem;
+  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+}
+
+.projects a:hover {
+  color: #dc8;
+}
+
+footer {
+  background-color: #003568;
+  color: #f2f2f2;
+}
+
+footer a {
+  color: #f7f7f7;
+}
+
+footer a figcaption {
+  color: #f2f2f2;
+}
+
+footer a svg {
+  fill: #f2f2f2;
+}
+
+footer a:hover {
+  color: #dc8;
+}
+
+footer a:hover figcaption {
+  color: #dc8;
+}
+
+footer a:hover svg {
+  fill: #dc8;
+}
+
+.blog {
+  background-color: #ececec;
+  min-height: 100vh;
+}
+
+.blog h1 {
+  color: #121212;
+}
+
+.blog a,
+.blog h2 {
+  color: #003568;
+}
+
+.blog .sub-header {
+  color: #555;
+}
+
+.blog p {
+  color: #262626;
+}
+
+.blog h3 {
+  margin: 0 0 2rem;
+  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+}
+
+.blog a:hover {
+  color: #dda289;
 }
