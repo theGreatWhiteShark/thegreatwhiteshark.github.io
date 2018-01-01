@@ -1,5 +1,5 @@
 ---
-title: "wxArt"
+title: "wxArt - neural style transfer in Python"
 date: "2016-03-15T17:39:21-07:00"
 description: "https://github.com/jusjusjus/wxArt"
 ---
