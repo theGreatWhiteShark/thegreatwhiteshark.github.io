@@ -1,13 +1,14 @@
 baseURL = "https://thegreatwhiteshark.github.io/"
 # baseURL = "/home/phil/git/thegreatwhiteshark.github.io/public"
 languageCode = "en-us"
-title = "theGreatWhiteShark blog"
+title = "theGreatWhiteShark"
 theme = "osprey"
+publishDir = "public"
 
 [Params]
 	tagline = "theGreatWhiteShark"
 	author = "Philipp Müller"
-	description = "A collection of all the my interests"
+	description = "A root blog for all my different blogs, interests, and projects"
 	github = "theGreatWhiteShark"
 	logoBig = "/images/text-big.png" 
 	logoSmall = "/images/text-small.png"
