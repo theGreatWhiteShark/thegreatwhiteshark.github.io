@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-# Deploy built docs to this branch
-TARGET_BRANCH=master
-
 if [ ! -d "$SOURCE_DIR" ]; then
   echo "SOURCE_DIR ($SOURCE_DIR) does not exist, build the source directory before deploying"
   exit 1
@@ -47,12 +44,20 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
   fi
 fi
 
+echo "Deploying..."
 REPO_NAME=$(basename $REPO)
 TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
 REV=$(git rev-parse HEAD)
+echo "REPO: $REPO"
+echo "REPO_NAME: $REPO_NAME"
+echo "SOURCE_DIR: $SOURCE_DIR"
+echo "TARGET_DIR: $TARGET_DIR"
+echo "TARGET_BRANCH: $TARGET_BRANCH"
+echo "REV: $REV"
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
 rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR/
 cd $TARGET_DIR
 git add -A .
 git commit --allow-empty -m "Built from commit $REV"
 git push $REPO $TARGET_BRANCH
+echo "Done deploying."
