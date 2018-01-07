@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/lightningkeymapmode/</loc>
+    <lastmod>2017-12-26T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/about/</loc>
+    <lastmod>2017-12-25T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/blogs/2-coding/</loc>
+    <lastmod>2017-12-25T13:04:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/blogs/3-art/</loc>
+    <lastmod>2017-12-25T13:04:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/blogs/1-music/</loc>
+    <lastmod>2017-12-25T13:04:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/climex/</loc>
+    <lastmod>2017-12-09T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/mensacardhack/</loc>
+    <lastmod>2017-02-20T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/whichpartoftown/</loc>
+    <lastmod>2016-11-10T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/wxart/</loc>
+    <lastmod>2016-03-15T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/blogs/</loc>
+    <lastmod>2017-12-25T13:04:11-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/projects/</loc>
+    <lastmod>2017-12-26T17:39:21-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/</loc>
+    <lastmod>2017-12-26T17:39:21-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on theGreatWhiteShark</title>
+    <link>https://thegreatwhiteshark.github.io/projects/</link>
+    <description>Recent content in Projects on theGreatWhiteShark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Dec 2017 17:39:21 -0700</lastBuildDate>
+    
+	<atom:link href="https://thegreatwhiteshark.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lightning-keymap-mode for Emacs</title>
+      <link>https://thegreatwhiteshark.github.io/projects/lightningkeymapmode/</link>
+      <pubDate>Tue, 26 Dec 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/projects/lightningkeymapmode/</guid>
+      <description>Reinventing navigation in Emacs by providing a layered minor mode keymap.</description>
+    </item>
+    
+    <item>
+      <title>Climex R package &#43; shiny app</title>
+      <link>https://thegreatwhiteshark.github.io/projects/climex/</link>
+      <pubDate>Sat, 09 Dec 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/projects/climex/</guid>
+      <description>A R package to perform a more robust extreme value analysis (EVA) on climatic time series. It also features a shiny web application to provide a convenient interface for people not familiar with either R or EVA.</description>
+    </item>
+    
+    <item>
+      <title>Mensacard hack </title>
+      <link>https://thegreatwhiteshark.github.io/projects/mensacardhack/</link>
+      <pubDate>Mon, 20 Feb 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/projects/mensacardhack/</guid>
+      <description>In this little project, I dived into the NFC technology in order to access the information of a local cafeteria card using both an Android phone and an Arduino.</description>
+    </item>
+    
+    <item>
+      <title>Which part of town does fit me most?</title>
+      <link>https://thegreatwhiteshark.github.io/projects/whichpartoftown/</link>
+      <pubDate>Thu, 10 Nov 2016 17:39:21 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/projects/whichpartoftown/</guid>
+      <description>The award-winning web app written by Stephan, Justus, and me at a Hackathon in 2016 for the city of Dresden.</description>
+    </item>
+    
+    <item>
+      <title>wxArt - neural style transfer in Python</title>
+      <link>https://thegreatwhiteshark.github.io/projects/wxart/</link>
+      <pubDate>Tue, 15 Mar 2016 17:39:21 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/projects/wxart/</guid>
+      <description>A Python interface to perform a style transfer between images using artificial intelligence and deep neuronal networks.</description>
+    </item>
+    
+  </channel>
+</rss>
