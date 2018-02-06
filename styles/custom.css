@@ -1,23 +1,41 @@
+.projects {
+  color: #000;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  font-family: "Open Sans",sans-serif!important;
+  font-spacing: 0!important;
+  letter-spacing: .01rem!important;
+}
+
+h1 {
+  font-weight: 700;
+}
+
 header {
-  background-color: #003568;
+  background-color: #111;
 }
 
 header h1 {
-  color: #dc8;
+  color: #bbb;
 }
 
 header a:hover {
-  color: #dc8;
+  text-decoration: underline;
 }
 
 nav {
-  background-color: #003568;
-  -webkit-box-shadow: 0 2px 2px #ececec;
-  box-shadow: 0 2px 2px #ececec;
+  background-color: #111;
+  -webkit-box-shadow: 0 2px 2px #fff;
+  box-shadow: 0 2px 2px #fff;
 }
 
 nav a {
-  color: #dc8;
+  color: #bbb;
 }
 
 nav h3 {
@@ -25,151 +43,147 @@ nav h3 {
 }
 
 nav a:hover {
-  color: #dc8;
+  text-decoration: underline;
+  color: #fff;
 }
 
 .about {
-  background-color: #ececec;
+  background-color: #fff;
 }
 
 .about h1,
 .about p {
-  color: #121212;
+  color: #000;
 }
 
 .about h1 a,
 .about p a {
   text-shadow: unset;
-  background-color: #ececec;
-  color: #003568;
+  background-color: #fff;
+  color: #0366d6;
   background-image: unset;
 }
 
 .about a:hover {
-  color: #dda289;
+  text-decoration: underline;
 }
 
 .blogs {
-  background-color: #ececec;
+  background-color: #fff;
   min-height: 100vh;
 }
 
 .blogs h1 {
-  color: #121212;
+  color: #000;
 }
 
 .blogs a,
 .blogs h2 {
-  color: #003568;
+  color: #333;
   font-weight: 700;
   margin-left: 1%;
 }
 
 .blogs .sub-header {
-  color: #555;
+  color: #333;
 }
 
 .blogs p {
-  color: #262626;
+  color: #3a4145;
 }
 
 .blogs h3 {
   margin: 0 0 2rem;
-  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+  font-family: "Open Sans",sans-serif;
 }
 
 .blogs a:hover {
-  color: #dda289;
+  text-decoration: underline;
+  color: #000;
 }
 
 .projects {
-  background-color: #003568;
+  background-color: #f0f0f0;
   min-height: 100vh;
   min-height: 100vh;
 }
 
 .projects h1 {
-  color: #dc8;
+  color: #000;
 }
 
 .projects a,
 .projects h2 {
-  color: #f7f7f7;
+  color: #333;
+  font-weight: 700;
 }
 
 .projects .sub-header {
-  color: #b9b9b9;
+  color: #333;
 }
 
 .projects p {
-  color: #f2f2f2;
-}
-
-.projects h3 {
-  margin: 0 0 2rem;
-  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+  color: #3a4145;
 }
 
 .projects a:hover {
-  color: #dc8;
+  text-decoration: underline;
+  color: #000;
 }
 
 footer {
-  background-color: #003568;
-  color: #f2f2f2;
+  background-color: #111;
+  color: #3a4145;
 }
 
 footer a {
-  color: #f7f7f7;
+  color: #bbb;
 }
 
 footer a figcaption {
-  color: #f2f2f2;
+  color: #bbb;
 }
 
 footer a svg {
-  fill: #f2f2f2;
+  fill: #bbb;
 }
 
 footer a:hover {
-  color: #dc8;
+  text-decoration: underline;
+  color: #fff;
 }
 
 footer a:hover figcaption {
-  color: #dc8;
+  color: #fff;
 }
 
 footer a:hover svg {
-  fill: #dc8;
+  fill: #fff;
 }
 
 .blog {
-  background-color: #ececec;
+  background-color: #fff;
   min-height: 100vh;
 }
 
 .blog h1 {
-  color: #121212;
+  color: #000;
 }
 
 .blog a,
 .blog h2 {
-  color: #003568;
+  color: #333;
 }
 
 .blog .sub-header {
-  color: #555;
+  color: #333;
 }
 
 .blog p {
-  color: #262626;
-}
-
-.blog h3 {
-  margin: 0 0 2rem;
-  font-family: Rubik,Poppins,"Hel­vetica",Arial,sans-serif;
+  color: #3a4145;
 }
 
 .blog a:hover {
-  color: #dda289;
+  text-decoration: underline;
+  color: #000;
 }

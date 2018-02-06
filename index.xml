@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Music</title>
+      <link>https://thegreatwhiteshark.github.io/blogs/1-music/</link>
+      <pubDate>Tue, 26 Dec 2017 13:04:11 -0700</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/blogs/1-music/</guid>
+      <description>In this blog I will document my journey to find the perfect sound. I will cover Linux audio software, best practice in recording, mixing, and mastering, as well as some useful tools and hacks from the field of digital signal processing.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://thegreatwhiteshark.github.io/about/</link>
       <pubDate>Mon, 25 Dec 2017 17:39:21 -0700</pubDate>
@@ -42,19 +51,10 @@ In this blog I want to share my experiences, present the solutions I found to en
     <item>
       <title>Digital art</title>
       <link>https://thegreatwhiteshark.github.io/blogs/3-art/</link>
-      <pubDate>Mon, 25 Dec 2017 13:04:11 -0700</pubDate>
+      <pubDate>Sun, 24 Dec 2017 13:04:11 -0700</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/blogs/3-art/</guid>
       <description>My humble attempt to produce some digital art (excluding music).</description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://thegreatwhiteshark.github.io/blogs/1-music/</link>
-      <pubDate>Mon, 25 Dec 2017 13:04:11 -0700</pubDate>
-      
-      <guid>https://thegreatwhiteshark.github.io/blogs/1-music/</guid>
-      <description>In this blog I will document my journey to find the perfect sound. I will cover Linux audio software, best practice in recording, mixing, and mastering, as well as some useful tools and hacks from the field of digital signal processing.</description>
     </item>
     
     <item>

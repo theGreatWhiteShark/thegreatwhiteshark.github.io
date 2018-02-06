@@ -1,24 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik|Bitter");
-
 // Custom colors
-$background-dark: #003568;
-$heading-dark: #ddcc88;
-$text-dark: #f2f2f2;
-$link-dark: #f7f7f7;
-$link-dark-hover: #ddcc88;
-$subheading-dark: #b9b9b9;
-
-$background-bright: #ececec;
-$heading-bright: #121212;
-$text-bright: #262626;
-$link-bright: #003568;
-$link-bright-hover: #dda289;
-$subheading-bright: #555555;
+$background-heading: #111;
+$background-dark: #f0f0f0;
+$background-bright: #FFF;
+$text-header: #BBB;
+$heading: #000;
+$subheading: #333;
+$text: #3A4145;
+$link: #0366d6;
 
 // Fonts
-$font-header: "Bitter", "Roboto Slab", "Cambria", Georgia, serif;
-$font-body: "Rubik", "Poppins", "Hel­vetica", Arial, sans-serif;
-$font-code: "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
+$font-header: "Open Sans", sans-serif;
+$font-body: "Open Sans", sans-serif;
+$font-code: "Open Sans", sans-serif;
 
 // Modular font scale
 // Large: http://www.modularscale.com/?1.25&em&1.333&web&text
@@ -54,61 +47,72 @@ $breakpoint-small: 25em; // 400px
 
 // The start page
 .projects {
-  color: $heading-dark; // this part is omitted ... ?
+  color: $heading; // this part is omitted ... ?
 }
+
+h1, h2, h3, p, a {
+  font-family: "Open Sans", sans-serif !important;
+  font-spacing: 0px !important;
+  letter-spacing: 0.01rem !important;
+}
+h1 {
+  font-weight: bold;
+}
+
 header {
-  background-color: $background-dark;
+  background-color: $background-heading;
   h1 {
-    color: $heading-dark;
+    color: $text-header;
   }
   a:hover {
-    color: $link-dark-hover;
+    text-decoration: underline;
   }
 }
 nav {
-  background-color: $background-dark;
+  background-color: $background-heading;
   a {
-    color: $heading-dark;
+    color: $text-header;
   }
   h3 {
     text-transform: unset;
   }
   box-shadow: 0 2px 2px $background-bright;
   a:hover {
-    color: $link-dark-hover;
+    text-decoration: underline;
+    color: #fff;
   }
 }
 .about {
   background-color: $background-bright;
   h1, p {
-    color: $heading-bright;
+    color: $heading;
     a {
       text-shadow: unset;
       background-color: $background-bright;
-      color: $link-bright;
+      color: $link;
       background-image: unset;
     }
   }
   a:hover {
-    color: $link-bright-hover;
+    text-decoration: underline;
   }
 }
 
 .blogs {
   background-color: $background-bright;
   h1 {
-    color: $heading-bright;
+    color: $heading;
   }
   h2, a {
-    color: $link-bright;
+    color: $subheading;
     font-weight: bold;
     margin-left: 1%;
   }
   .sub-header {
-    color: $subheading-bright;
+    color: $subheading;
   }
   p {
-    color: $text-bright;
+    color: $text;
   }
   min-height: 100vh;
   h3 {
@@ -116,54 +120,54 @@ nav {
     font-family: $font-body;
   }
   a:hover {
-    color: $link-bright-hover;
+    text-decoration: underline;
+    color: #000;
   }
 }
 
 .projects {
   background-color: $background-dark;
   h1 {
-    color: $heading-dark;
+    color: $heading;
   }
   h2, a {
-    color: $link-dark;
+    color: $subheading;
+    font-weight: bold;
   }
   .sub-header {
-    color: $subheading-dark;
+    color: $subheading;
   }
   p {
-    color: $text-dark;
+    color: $text;
   }
   min-height: 100vh;
-  h3 {
-    margin: 0 0 $vertical-rhythm;
-    font-family: $font-body;
-  }
   a:hover {
-    color: $link-dark-hover;
+    text-decoration: underline;
+    color: #000;
   }
   min-height: 100vh;
 }
 
 footer {
-  background-color: $background-dark;
-  color: $text-dark;
+  background-color: $background-heading;
+  color: $text;
   a {
-    color: $link-dark;
+    color: $text-header;
     figcaption {
-      color: $text-dark;
+      color: $text-header;
     }
     svg {
-      fill: $text-dark;
+      fill: $text-header;
     }
   }
   a:hover {
-    color: $link-dark-hover;
+    text-decoration: underline;
+    color: #fff;
     figcaption {
-      color: $link-dark-hover;
+      color: #fff;
     }
     svg {
-      fill: $link-dark-hover;
+      fill: #fff;
     }
   }
 }
@@ -172,23 +176,20 @@ footer {
 .blog {
   background-color: $background-bright;
   h1 {
-    color: $heading-bright;
+    color: $heading;
   }
   h2, a {
-    color: $link-bright;
+    color: $subheading;
   }
   .sub-header {
-    color: $subheading-bright;
+    color: $subheading;
   }
   p {
-    color: $text-bright;
+    color: $text;
   }
   min-height: 100vh;
-  h3 {
-    margin: 0 0 $vertical-rhythm;
-    font-family: $font-body;
-  }
   a:hover {
-    color: $link-bright-hover;
+    text-decoration: underline;
+    color: #000;
   }
 }
