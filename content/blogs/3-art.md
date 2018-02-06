@@ -1,6 +1,6 @@
 ---
 title: "Digital art"
-date: "2017-12-25T13:04:11-07:00"
-description: "https://thegreatwhiteshark.github.io/thegreatwhiteshark.art.io"
+date: "2017-12-24T13:04:11-07:00"
+description: "https://thegreatwhiteshark.tech.blog/category/art/"
 ---
 My humble attempt to produce some digital art (excluding music). 
